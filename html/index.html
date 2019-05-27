@@ -1,79 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>WebProsjekt1133</title>
-
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    
-    <div class="sidenav">
-        
-        <button id="homeBtn" onclick="homeButton()">Home</button>
-        
-        <button id="calBtn" onclick="calenderButton()">Calender</button>
-        
-        <button id="messBtn" onclick="messagesButton()">Messages</button>
-        
-        <button id="helpBtn" onclick="helpButton()">Help</button>
-        
+  <head>
+    <title>Simple Javascript Calendar</title>
+    <link href="calendar.css" rel="stylesheet">
+    <script src="calendar.js"></script>
+  </head>
+  <body><div id="page-body">
+    <!-- [PERIOD SELECTOR] -->
+    <div id="cal-date">
+      <select id="cal-mth"></select>
+      <select id="cal-yr"></select>
+      <input id="cal-set" type="button" value="SET"/>
     </div>
-    
-    <div class="month">
-        <ul>
-            <li class="prev">&#10094;</li>
-            <li class="next">&#10095;</li>
-            <li>August<br><span style="font-size:18px">2019</span></li>
-        </ul>    
-    </div>
-    
-    <ul class="weekdays">
-        <li>Mo</li>
-        <li>Tu</li>
-        <li>We</li>
-        <li>Th</li>
-        <li>Fr</li>
-        <li>Sa</li>
-        <li>Su</li>
-    </ul>
-    
-    <ul class="days">
-        <li id="btn1">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li><span class="active">10</span></li>
-        <li>11</li>
-        <li>12</li>
-        <li>13</li>
-        <li>14</li>
-        <li>15</li>
-        <li>16</li>
-        <li>17</li>
-        <li>18</li>
-        <li>19</li>
-        <li>20</li>
-        <li>21</li>
-        <li>22</li>
-        <li>23</li>
-        <li>24</li>
-        <li>25</li>
-        <li>26</li>
-        <li>27</li>
-        <li>28</li>
-        <li>29</li>
-        <li>30</li>
-        <li>31</li>
-        
-    </ul>
-    
 
-    <script src="/js/index.js"></script>
-</body>
+    <!-- [CALENDAR] -->
+    <div id="cal-container"></div>
+
+    <!-- [EVENT] -->
+    <div id="cal-event"></div>
+  </div></body>
 </html>
