@@ -1,4 +1,3 @@
-/* [PERIOD SELECTOR] */
 #cal-date {
   margin: 10px 0;
 }
@@ -10,9 +9,8 @@
   color: #fff;
 }
 
-/* [CALENDAR] */
 #calendar {
-  width: 100%;
+  width: 65%;
   border-collapse: collapse;
 }
 #calendar tr.head td {
@@ -47,7 +45,6 @@
   color: #ff5d5d;
 }
 
-/* [ADD/EDIT EVENT] */
 #cal-event form {
   padding: 15px;
   margin-top: 20px;
@@ -66,7 +63,7 @@
 #cal-event textarea {
   display: block;
   box-sizing: padding-box;
-  width: 90%;
+  width: 65%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
@@ -81,7 +78,6 @@
   color: #fff;
 }
 
-/* [DOES NOT MATTER] */
 html, body, textarea, input{
   font-family: helvetica, sans-serif;
 }
