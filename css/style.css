@@ -1,27 +1,39 @@
-#kanbanBtn {
-    left: 10px;
-    top: 50px;
+body {
+    background-color: #2b5ca8;
+}
+#title {
+    text-align: center;
     margin: auto;
     padding: auto;
-    position: fixed;
-    background-color: #ff5d5d;
+    color: white;
+    font-family: monospace;
     width: 100px;
-    border: 2px solid #ddd;
 }
-#kanbanBtn:hover{
-    background-color: #ea4c4c;
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3265b5;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+.sidenav a:hover {
+    color: lightgray;
+}
+.main {
+    margin-left: 160px;
+    padding: 0 10px;
+    
 }
 
-#homeBtn {
-    left: 10px;
-    top: 10px;
-    margin: auto;
-    padding: auto;
-    position: fixed;
-    background-color: #ff5d5d;
-    width: 100px;
-    border: 2px solid #ddd;
-}
-#homeBtn:hover{
-    background-color: #ea4c4c;
-}
+
