@@ -1,0 +1,37 @@
+body {
+    background-color: #2b5ca8;
+}
+#title {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    color: white;
+    font-family: monospace;
+    width: 100px;
+}
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3265b5;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+.sidenav a:hover {
+    color: lightgray;
+}
+.main {
+    margin-left: 160px;
+    padding: 0 10px;
+    
+}
