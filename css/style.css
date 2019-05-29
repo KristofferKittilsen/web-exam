@@ -36,11 +36,6 @@ body {
     
 }
 
-=======
-.body {
-   
-}
-
 #header {
     position: absolute;
     width: 100%;
@@ -52,7 +47,7 @@ body {
 }
 
 #webpro {
-    z-index: 2;
+    z-index: 1;
     color: white;
     text-align: center;
     font-size: 30px;
@@ -65,14 +60,15 @@ body {
     margin-right: auto;
     position: relative;
     width: 300px;
-    height: 200px;
+    height: 150px;
     background-color: grey;
     box-shadow: 2px 2px;
+    border-radius: 4px;
 
 }
 
 #brukernavn {
-    width: 100%;
+    width: 60%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -86,19 +82,20 @@ body {
     margin-right: auto;
 }
 
-#passordtxt{
+#passordtxt {
     font-family: 'Karla', sans-serif;
     font-size: 18px;
 
 }
 
 #passord {
-    width: 100%;
+    width: 70%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     box-sizing: border-box;
 
 }
+
 
 #logginn{
     border-radius: 5px;
@@ -110,3 +107,19 @@ body {
 
 
 
+
+
+#logginn {
+    display: block;
+    z-index: 10;
+    background-color: aqua;
+    width: 50%;
+    height: 15%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    color: black;
+}

@@ -6,6 +6,7 @@ function contactalert() {
     alert("Contact information: test@test.com " + "\n" + "Phonenumber: 28119823")
 }
 
+<<<<<<< HEAD
 $(onPageLoad);
 
 function onPageLoad() {
@@ -39,3 +40,9 @@ function inputPrompt() {
     document.getElementById("inputBox").style.display = "block";
 
 }
+=======
+
+
+
+
+>>>>>>> cf125c156c37e8a6052b9e21cce2567c9c496541
