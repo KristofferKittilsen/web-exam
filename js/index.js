@@ -5,3 +5,7 @@ function contactalert() {
     alert("Contact information: test@test.com " + "\n" + "Phonenumber: 28119823")
 }
 
+
+
+
+

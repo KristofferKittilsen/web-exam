@@ -1,7 +1,4 @@
-
-.body {
-   
-}
+.body {}
 
 #header {
     position: absolute;
@@ -49,7 +46,7 @@
     margin-right: auto;
 }
 
-#passordtxt{
+#passordtxt {
     font-family: 'Karla', sans-serif;
     font-size: 18px;
 
@@ -64,8 +61,8 @@
 }
 
 
-   
-#logginn{
+
+#logginn {
     display: block;
     z-index: 10;
     background-color: aqua;
@@ -78,20 +75,4 @@
     text-align: center;
     font-family: 'Karla', sans-serif;
     color: black;
-}    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

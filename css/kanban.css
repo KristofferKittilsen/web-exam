@@ -1,6 +1,7 @@
 body {
     background-color: #2b5ca8;
 }
+
 #title {
     text-align: center;
     margin: auto;
@@ -9,6 +10,7 @@ body {
     font-family: monospace;
     width: 100px;
 }
+
 .sidenav {
     height: 100%;
     width: 160px;
@@ -20,6 +22,7 @@ body {
     overflow-x: hidden;
     padding-top: 20px;
 }
+
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -27,11 +30,13 @@ body {
     color: white;
     display: block;
 }
+
 .sidenav a:hover {
     color: lightgray;
 }
+
 .main {
     margin-left: 160px;
     padding: 0 10px;
-    
+
 }
