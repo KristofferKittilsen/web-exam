@@ -11,30 +11,46 @@ function inputPrompt() {
 
 }
 
-function submitAnwser() {
-    var x, text;
-    x = document.getElementById("input").value;
-    var info = document.createElement("P");
-    x.innerText = input.vale;
-    document.body.appendChild(info);
+const landingdiv = document.getElementById("item1");
+const newBtn = document.getElementById("newBtn");
+
+
+function createDiv() {
+
+    const title = document.getElementById("title").value;
+    const text = document.getElementById("text").value;
+
+
+    var div = document.createElement("div");
+
+    var h1 = document.createElement("h1");
+    h1.innerText = title;
+    var p = document.createElement("p");
+    p.innerText = text;
+
+    div.appendChild(h1);
+    div.appendChild(p);
+    landingdiv.appendChild(div);
+
 }
 
-/*
-function submitAnwser() {
-    var x, text;
-    x = document.getElementById("input").value;
-    text = input.value;
 
-    document.getElementById("demo").innerHTML = text;
+newBtn.addEventListener("click", function () {
+    createDiv();
+})
 
-    document.getElementById("inputBox").style.display = "none";
 
-    var y, text2;
-    y = document.getElementById("inputPage").value;
-    text = inputPage.value;
+var item1 = document.querySelector("item1");
 
-    document.getElementById("demo2").innerHTML = text;
+function dragginStarts(e) {
+    item1 = e.target;
+    item1 = style.opacity = "0.2";
+}
 
-    document.getElementById("inputBox").style.display = "none";
+item1.addEventListener("dragstart", draggingStarts, false);
 
-} */
+
+
+
+
+
