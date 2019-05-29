@@ -6,6 +6,7 @@ function contactalert() {
     alert("Contact information: test@test.com " + "\n" + "Phonenumber: 28119823")
 }
 
+<<<<<<< HEAD
 
 $(onPageLoad);
 
@@ -36,8 +37,41 @@ function onPageLoad() {
 }
 
 
+=======
+>>>>>>> 86825b5bbc083f2b39c5e3203f142811d8734489
 function inputPrompt() {
     document.getElementById("inputBox").style.display = "block";
 
 }
+<<<<<<< HEAD
 
+=======
+
+function submitAnwser() {
+    var x, text;
+    x = document.getElementById("input").value;
+    var info = document.createElement("P");
+    x.innerText = input.vale;
+    document.body.appendChild(info);
+}
+
+/*
+function submitAnwser() {
+    var x, text;
+    x = document.getElementById("input").value;
+    text = input.value;
+
+    document.getElementById("demo").innerHTML = text;
+
+    document.getElementById("inputBox").style.display = "none";
+
+    var y, text2;
+    y = document.getElementById("inputPage").value;
+    text = inputPage.value;
+
+    document.getElementById("demo2").innerHTML = text;
+
+    document.getElementById("inputBox").style.display = "none";
+
+} */
+>>>>>>> 86825b5bbc083f2b39c5e3203f142811d8734489

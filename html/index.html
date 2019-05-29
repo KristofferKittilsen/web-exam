@@ -7,9 +7,7 @@
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/kanban.css" rel="stylesheet">
     <script src="/js/index.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
 
 
 </head>
@@ -26,54 +24,38 @@
         <a onclick="contactalert()" href="#">Contact</a>
         <a onclick="faqalert()" href="#">FAQ</a>
         <a onclick="inputPrompt()" href="#">New page</a>
+<<<<<<< HEAD
+        </div>
+=======
+    </div>
+>>>>>>> 86825b5bbc083f2b39c5e3203f142811d8734489
+
+
+    <div class="sidenav">
+        <a href="#">Home</a>
+        <a href="#">Issues</a>
+        <a href="#">Info/links</a>
+        <a onclick="contactalert()" href="#">Contact</a>
+        <a onclick="faqalert()" href="#">FAQ</a>
+        <a onclick="inputPrompt()" href="#">New page</a>
+
+    </div>
+
+    <div class="main">
+
+
+        <div id="inputBox">
+            <p id="titleBox">Write title</p>
+            <input id="input" type="text">
+            <p id="pageInfo">Info</p>
+            <input id="inputPage" type="text">
+            <a onclick="submitAnwser()" href="#">Submit</a>
+        </div>
+        <div>
+        <div id="kanbanContainer">
+            <p id="demo"></p>
+            <p></p>
+            <p id="demo2"></p>
         </div>
 
-
-
-        <div class="sidenav">
-            <a href="#">Home</a>
-            <a href="#">Issues</a>
-            <a href="#">Info/links</a>
-            <a onclick="contactalert()" href="#">Contact</a>
-            <a onclick="faqalert()" href="#">FAQ</a>
-            <a onclick="inputPrompt()" href="#">New page</a>
-
-        </div>
-
-        <div class="main">
-
-
-            <div id="inputBox">
-                <p id="titleBox">Write title</p>
-                <input id="input" type="text">
-                <input id="submitBtn" type="submit" value="Submit">
-            </div>
-
-
-            <div class="column">
-
-                <div class="portlet">
-                    <div class="portlet-header"></div>
-                    <div class="portlet-content"></div>
-                </div>
-
-
-
-            </div>
-
-            <div class="column">
-
-                <div class="portlet">
-                    <div class="portlet-header"></div>
-                    <div class="portlet-content"></div>
-                </div>
-
-            </div>
-            <div class="column">
-                <div class="portlet">
-                    <div class="portlet-header"></div>
-                    <div class="portlet-content"></div>
-                </div>
-            </div>
-
-        </div>
+    </div>
