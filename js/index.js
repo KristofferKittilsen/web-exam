@@ -3,7 +3,7 @@ function contactalert() {
 }
 
 const landingdiv = document.getElementById("item1");
-const newBtn = document.getElementById("newBtn");
+const toDoBtn = document.getElementById("toDoBtn");
 
 
 function createDiv() {
@@ -32,7 +32,7 @@ function createDiv() {
 }
 
 
-newBtn.addEventListener("click", function () {
+toDoBtn.addEventListener("click", function () {
     createDiv();
 })
 

@@ -129,10 +129,15 @@ li a:hover {
 
 }
 
-#newBtn {
+#toDoBtn {
     border-radius: 8px;
     font-family: 'Open Sans', sans-serif;
     background-color: grey;
     color: white;
     width: 100px;
+    border: 0;
+}
+
+#toDoBtn:hover {
+    background-color: darkgray;
 }
