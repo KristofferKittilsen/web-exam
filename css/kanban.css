@@ -1,5 +1,5 @@
 body {
-    background-color: #2b5ca8;
+    background-color: #173753;
     min-width: 1000px;
     height: 100%;
     width: 100%;
@@ -46,8 +46,8 @@ li a:hover {
 }
 
 .kanbanPage {
-    background-color: grey;
-    color: white;
+    background-color: #6DAEDB;
+    color: #1B4353;
     text-align: center;
     width: 80%;
     border-radius: 8px;
@@ -98,41 +98,62 @@ li a:hover {
 
 #toDoText {
     text-align: center;
-    color: white;
+    color: #2892D7;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    
+
 }
 
 #ongoingText {
     text-align: center;
-    color: white;
+    color: #2892D7;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
 #doneText {
     text-align: center;
-    color: white;
+    color: #2892D7;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    
+
 }
 
 #title {
     border-radius: 8px;
+    width: 15%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    box-shadow:  3px 3px 3px black;
+    
 
 }
 
 #text {
     border-radius: 8px;
+    width: 15%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    box-shadow:  3px 3px 3px black;
 
 }
 
 #newBtn {
     border-radius: 8px;
     font-family: 'Open Sans', sans-serif;
-    background-color: grey;
-    color: white;
+    background-color: #6DAEDB;
+    color: #1B4353;
     width: 100px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    box-shadow:  3px 3px 3px black;
 }
+
+
