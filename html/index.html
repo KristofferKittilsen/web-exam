@@ -4,8 +4,8 @@
 <head>
     <title>Webprosjekt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/kanban.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/kanban.css">
 
 
 
@@ -13,12 +13,11 @@
 
 <body>
     <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="active" href="#logOut">Log out</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a onclick="contactalert()" href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
     </ul>
-
 
     <div id="inputContainer">
         <input id="title" placeholder="Title here">
@@ -27,17 +26,24 @@
         <hr>
     </div>
 
+
     <div class="main">
         <div id="gridContainer">
-            <div id="item1"></div>
-            <div id="item2"></div>
-            <div id="item3"></div>
-
+            <div class="column" id="item1">
+                <p id="toDoText">To do:</p>
+            </div>
+            <div class="column" id="item2">
+                <p id="ongoingText">Ongoing:</p>
+            </div>
+            <div class="column" id="item3">
+                <p id="doneText">Done:</p>
+            </div>
+            <script src="../js/index.js">
+            </script>
         </div>
 
     </div>
-    < script src="/js/index.js">
-        </script>
+
 
 </body>
 

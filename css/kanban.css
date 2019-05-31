@@ -27,6 +27,7 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
 #inputContainer {
     margin: 5px;
 }
@@ -36,52 +37,65 @@ li a:hover {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr 1fr 1fr;
 
-    border-style: dashed;
+   /* border-style: dashed; */
     color: black;
     margin: 5px;
 }
-
+.kanbanPage {
+    background-color: #269bc9;
+    color: white;
+    text-align: center;
+}
 
 #item1 {
     grid-column-start: 1;
     grid-column-end: 1;
+    min-height: 150px;
     height: auto;
     grid-row-start: 1;
     grid-row-end: 1;
 
-    color: red;
-    border-style: dashed;
-}
-
-#item1 div {
-    background-color: pink;
     color: white;
+    border-right-style: solid;
 }
 
 #item2 {
-    /* Horizontal */
     grid-column-start: 2;
     grid-column-end: 2;
     height: 20px;
-    /* Vertical */
+    
     grid-row-start: 1;
     grid-row-end: 1;
 
-    border-style: dashed;
     color: blue;
+    height: auto;
 }
 
 #item3 {
-
-    /* Horizontal */
     grid-column-start: 3;
     grid-column-end: 3;
     height: 20px;
-    /* Vertical */
+   
     grid-row-start: 1;
     grid-row-end: 1;
 
-    border-style: dashed;
-    color: green;
+    border-left-style: solid; 
+    color: white;
+    height: auto;
 
+}
+#toDoText {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+#ongoingText {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+#doneText {
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
