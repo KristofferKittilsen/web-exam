@@ -13,9 +13,11 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
+
 li {
     float: left;
 }
+
 li a {
     display: block;
     color: white;
@@ -31,20 +33,29 @@ li a:hover {
 #inputContainer {
     margin: 5px;
 }
+
 #gridContainer {
     display: grid;
 
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr 1fr 1fr;
 
-   /* border-style: dashed; */
+    /* border-style: dashed; */
     color: black;
     margin: 5px;
 }
+
 .kanbanPage {
-    background-color: #269bc9;
+    background-color: grey;
     color: white;
     text-align: center;
+    width: 80%;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 3px 3px 3px black;
+
 }
 
 #item1 {
@@ -63,7 +74,7 @@ li a:hover {
     grid-column-start: 2;
     grid-column-end: 2;
     height: 20px;
-    
+
     grid-row-start: 1;
     grid-row-end: 1;
 
@@ -75,27 +86,53 @@ li a:hover {
     grid-column-start: 3;
     grid-column-end: 3;
     height: 20px;
-   
+
     grid-row-start: 1;
     grid-row-end: 1;
 
-    border-left-style: solid; 
+    border-left-style: solid;
     color: white;
     height: auto;
 
 }
+
 #toDoText {
     text-align: center;
     color: white;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    
 }
+
 #ongoingText {
     text-align: center;
     color: white;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
+
 #doneText {
     text-align: center;
     color: white;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+#title {
+    border-radius: 8px;
+
+}
+
+#text {
+    border-radius: 8px;
+
+}
+
+#newBtn {
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: grey;
+    color: white;
+    width: 100px;
 }
