@@ -37,18 +37,21 @@ function createDiv() {
 
 
     var greenBtn = document.createElement("button");
+    greenBtn.setAttribute("class", "greenBtn")
     greenBtn.innerText = "Green";
     greenBtn.onclick = function() {
         div.style.backgroundColor = "green";
     }
 
     var redBtn = document.createElement("button");
+    redBtn.setAttribute("class", "redBtn")
     redBtn.innerText = "Red";
     redBtn.onclick = function() {
         div.style.backgroundColor = "red";
     }
 
     var blueBtn = document.createElement("button");
+    blueBtn.setAttribute("class", "blueBtn")
     blueBtn.innerText = "Blue";
     blueBtn.onclick = function() {
         div.style.backgroundColor = "blue";
@@ -147,4 +150,42 @@ window.onclick = function (event) {
     }
 }
 
+var colorPopup = document.getElementById("colorPopup");
+var colorBtn = document.getElementById("newColorBtn");
+var close = document.getElementsByClassName("colorClose") [0];
 
+colorBtn.onclick = function() {
+    colorPopup.style.display = "block";
+}
+
+close.onclick = function() {
+    colorPopup.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if(event.target == colorPopup) {
+        colorPopup.style.display = "none";
+    }
+}
+
+btnGreenC.onclick = function() {
+    document.body.style.backgroundColor = "green";
+}
+btnRedC.onclick = function() {
+    document.body.style.backgroundColor = "red";
+}
+btnBlackC.onclick = function() {
+    document.body.style.backgroundColor = "black";
+}
+btnYellowC.onclick = function() {
+    document.body.style.backgroundColor = "yellow";
+}
+btnPinkC.onclick = function() {
+    document.body.style.backgroundColor = "pink";
+}
+btnBlueC.onclick = function() {
+    document.body.style.backgroundColor = "blue";
+}
+btnResetC.onclick = function() {
+    document.body.style.backgroundColor = "#2b5ca8";
+}

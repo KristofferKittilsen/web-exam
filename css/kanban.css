@@ -30,10 +30,6 @@ li a:hover {
     background-color: #111;
 }
 
-#inputContainer {
-    margin: 5px;
-}
-
 #gridContainer {
     display: grid;
 
@@ -216,4 +212,56 @@ li a:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#container {
+    background-color: White;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.colorClose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.colorClose:hover, .colorClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.redBtn {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.greenBtn {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.blueBtn {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
