@@ -1,116 +1,33 @@
-
 <html>
 
 <head>
-    
-    
-    
-    
     <meta charset="UTF-8">
     <title>Login</title>
-          
-    <style>
-@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="../js/login.js"></script>
 
-        
-        .login{
-           
-            position: absolute;
-            top: calc (50% - 75px);
-            left: calc (50% - 50px);
-            height: 150px;
-            width: 350px;
-            padding: 10px;
-             }
-        
-        .login input [type=text]{
-        width: 250px;
-        height: 30px;
-        background: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.6);
-        border-radius: 2px;
-        color: #fff;
-        font-family: 'Exo', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        padding: 4px;
-            
-        }
-        
-        .login input [type=button]{
-            width: 260px;
-            height: 35px;
-            background: #fff;
-            border: 1px solid #fff;
-            cursor: pointer;
-            border-radius: 2px;
-            color: #a18d6c;
-            font-family: 'Exo', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            padding: 6px;
-            margin-top: 10px;
-        }
-        
-        .login input [type=button] :hover{
-            opacity: 0.8;
-        }
-        .login input [type=button]: active{
-            opacity: 0.6;
-        }
-        .login input [type=text]:focus{
-            outline: none;
-            border: 1px solid rgba (255, 255, 255, 0.9);
-        }
-        .login input [type=password]:focus{
-            outline: none;
-        }
-        
-        ::-webkit-input-placeholder{
-            color: rgba(255, 255, 255,0.6);
-        }
-        ::-moz-input-placeholder{
-            color: rgba(255,255,255,0.6);
-        }
-    </style>
-    
-    <body oncontextmeny="return false">
-        
-        <div class="body"></div>
-        <div class="grad"></div>
-        <div class="header">
-            
-            <div>Gruppe<span>2</span></div>
-        </div>
-        <br>
-        <form name="login">
+
+
+<body oncontextmeny="return false">
+
+    <div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+
+        <div>Gruppe<span>2</span></div>
+    </div>
+    <br>
+    <form name="login">
         <div class="login">
-        <input type="text" placeholder="username" name="userid"><br>
-        <input type="password" placeholder="password" name="pswrd"><br>
-        <input type="button" onclick="check(this.form)" value="Login"/>
-            
-            </div>
-        
-        </form>
-        
-        <script language="javascript">
-        function check(form)
-            {
-                if(form.userid.value == "test" && form.pswrd.value == "test")
-                {
-                window.open(href='index.html')
-                }
-        else
-            {
-                alert("the username and password you entered is wrong")
-            }
-            }
-        
-        
-        
-        </script>
-    </body>
-    </head>
+            <input type="text" placeholder="username" name="userid"><br>
+            <input type="password" placeholder="password" name="pswrd"><br>
+            <input type="button" onclick="check(this.form)" value="Login" />
+
+        </div>
+
+    </form>
+</body>
+</head>
 
 
 
