@@ -1,41 +1,35 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Webprosjekt knk</title>
-    <link href="/css/style.css" rel="stylesheet">
-    <script src="/js/index.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="../js/login.js"></script>
+
+
+
+<body oncontextmeny="return false">
+
+    <div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+
+        <div>Gruppe<span>2</span></div>
+    </div>
+    <br>
+    <form name="login">
+        <div class="login">
+            <input type="text" placeholder="username" name="userid"><br>
+            <input type="password" placeholder="password" name="pswrd"><br>
+            <input type="button" onclick="check(this.form)" value="Login" />
+
+        </div>
+
+    </form>
+</body>
 </head>
 
-<body>
-
-    <div id="header"></div>
-    <h1 id="webpro">KANBANBANBAN</h1>
-
-
-    <div id="logincontainer">
-        <form id="inputboxer">
-
-            <label id="brukernavntxt">BRUKERNAVN</label>
-            <input id="brukernavn" type="text">
-
-            <label id="passordtxt">PASSORD</label>
-            <input id="passord" type="text">
-            
-            
-
-        </form>
-
-        <a id="logginn"  href="index.html">LOGG INN</a>
-
-    </div>
-   
-    
 
 
 
-
-
-</body>
 </html>

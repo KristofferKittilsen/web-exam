@@ -1,85 +1,37 @@
-#header {
-    position: absolute;
-    width: 100%;
-    height: 10%;
-    background-color: #1c4fa0;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
+ .login {
+     position: absolute;
+     top: calc (50% - 75px);
+     left: calc (50% - 50px);
+     height: 150px;
+     width: 350px;
+     padding: 10px;
+ }
 
-#webpro {
-    z-index: 1;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    font-family: 'Karla', sans-serif;
-}
+ .login input [type=text] {
+     width: 250px;
+     height: 30px;
+     background: transparent;
+     border: 1px solid rgba(255, 255, 255, 0.6);
+     border-radius: 2px;
+     color: #fff;
+     font-family: 'Exo', sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     padding: 4px;
 
-#logincontainer {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    width: 300px;
-    height: 150px;
-    background-color: grey;
-    box-shadow: 2px 2px;
-    border-radius: 4px;
+ }
 
-}
-
-#brukernavn {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-
-}
-
-#brukernavntxt {
-    font-family: 'Karla', sans-serif;
-    font-size: 18px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#passordtxt {
-    font-family: 'Karla', sans-serif;
-    font-size: 18px;
-
-}
-
-#passord {
-    width: 70%;
-    padding: 12px 20px;
-    margin: 10px 0;
-    box-sizing: border-box;
-
-}
-
-
-#logginn{
-    border-radius: 5px;
-    background-color: #1c4fa0;
-    color: white;
-   
-    
-}
-
-
-
-#logginn {
-    display: block;
-    z-index: 10;
-    background-color: aqua;
-    width: 50%;
-    height: 15%;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    text-align: center;
-    font-family: 'Karla', sans-serif;
-    color: black;
-}
+ .login input [type=button] {
+     width: 260px;
+     height: 35px;
+     background: #fff;
+     border: 1px solid #fff;
+     cursor: pointer;
+     border-radius: 2px;
+     color: #a18d6c;
+     font-family: 'Exo', sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     padding: 6px;
+     margin-top: 10px;
+ }

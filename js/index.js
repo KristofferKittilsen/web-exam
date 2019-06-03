@@ -3,13 +3,14 @@ function contactalert() {
 }
 
 const landingdiv = document.getElementById("item1");
-const newBtn = document.getElementById("newBtn");
+const toDoBtn = document.getElementById("toDoBtn");
 
 
 function createDiv() {
 
     const title = document.getElementById("title").value;
     const text = document.getElementById("text").value;
+    const deadline = document.getElementById("deadline").value;
 
    
 
@@ -22,18 +23,70 @@ function createDiv() {
 
     var h1 = document.createElement("h1");
     h1.innerText = title;
+    
     var p = document.createElement("p");
     p.innerText = text;
+    
+    var x = document.createElement ("Date");   
+    x.innerText = deadline; 
 
+    var br = document.createElement("p");
+    br.innerText = "";
+    var br2 = document.createElement("p");
+    br.innerText = "";
+
+
+    var greenBtn = document.createElement("button");
+    greenBtn.innerText = "Green";
+    greenBtn.onclick = function() {
+        div.style.backgroundColor = "green";
+    }
+
+    var redBtn = document.createElement("button");
+    redBtn.innerText = "Red";
+    redBtn.onclick = function() {
+        div.style.backgroundColor = "red";
+    }
+
+    var blueBtn = document.createElement("button");
+    blueBtn.innerText = "Blue";
+    blueBtn.onclick = function() {
+        div.style.backgroundColor = "blue";
+    }
+
+    var deleteBtn = document.createElement("button");
+    deleteBtn.innerText = "Delete page";
+    deleteBtn.onclick = function() {
+        var r = confirm("You sure you want to delete this page?")
+        if (r == true) {
+            div.parentElement.removeChild(div);
+        } else {
+            alert("You did not delete page");
+        }
+        
+
+        
+    }
+    
     div.appendChild(h1);
     div.appendChild(p);
+    div.appendChild(x);
+    div.appendChild(br);
+    div.appendChild(greenBtn);
+    div.appendChild(redBtn);
+    div.appendChild(blueBtn);
+    div.appendChild(br2);
+    div.appendChild(deleteBtn);
+    
     landingdiv.appendChild(div);
 
 }
 
 
-newBtn.addEventListener("click", function () {
+toDoBtn.addEventListener("click", function () {
     createDiv();
+    popup.style.display = "none";
+    
 })
 
 var dragged;
@@ -76,11 +129,22 @@ document.addEventListener("drop", function (event) {
 }, false);
 
 
+var popup = document.getElementById("myPopup");
+var btn = document.getElementById("newPageBtn");
+var span = document.getElementsByClassName("close") [0];
 
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
+btn.onclick = function() {
+    popup.style.display = "block";
 }
 
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+span.onclick = function() {
+    popup.style.display = "none";
 }
+
+window.onclick = function (event) {
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+}
+
+
