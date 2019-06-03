@@ -32,6 +32,8 @@ function createDiv() {
 
     var br = document.createElement("p");
     br.innerText = "";
+    var br2 = document.createElement("p");
+    br.innerText = "";
 
 
     var greenBtn = document.createElement("button");
@@ -52,6 +54,19 @@ function createDiv() {
         div.style.backgroundColor = "blue";
     }
 
+    var deleteBtn = document.createElement("button");
+    deleteBtn.innerText = "Delete page";
+    deleteBtn.onclick = function() {
+        var r = confirm("You sure you want to delete this page?")
+        if (r == true) {
+            div.parentElement.removeChild(div);
+        } else {
+            alert("You did not delete page");
+        }
+        
+
+        
+    }
     
     div.appendChild(h1);
     div.appendChild(p);
@@ -60,6 +75,8 @@ function createDiv() {
     div.appendChild(greenBtn);
     div.appendChild(redBtn);
     div.appendChild(blueBtn);
+    div.appendChild(br2);
+    div.appendChild(deleteBtn);
     
     landingdiv.appendChild(div);
 
