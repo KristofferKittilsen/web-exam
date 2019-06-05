@@ -1,4 +1,44 @@
- .login {
+body{font-family: sans-serif}
+* {box-sizing: border-box}{
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: black;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  margin-bottom:10px;
+  opacity: 0.8;
+
+}
+.bg{
+    background-color: skyblue;
+    background-image: linear-gradient(skyblue, white);
+    height: 100%;
+    width: 100%;
+    
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.login {
      position: absolute;
      top: calc (50% - 75px);
      left: calc (50% - 50px);
