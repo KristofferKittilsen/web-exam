@@ -25,7 +25,7 @@ body {
     border: 1px solid #fff; 
     border-radius: 10px;
     color: #a18d6c;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
     padding: 6px;
@@ -38,6 +38,13 @@ body {
     cursor: pointer;
     width: 275px;
     color: black;
+}
+
+#Ok{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    
 }
 
 
