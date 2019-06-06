@@ -11,7 +11,7 @@ function myFunction() {
 
     for (i = 0; i < user.length; i++) {
         if (userIdInput == user[i].username && userPwInput == user[i].password) {
-            document.getElementById("Ok").innerHTML = "Log in";
+            document.getElementById("Ok").innerHTML = "Click here to continue";
         }
     }
 
