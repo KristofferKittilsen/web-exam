@@ -8,24 +8,29 @@
 
 
 
-<body oncontextmeny="return false">
+<body>
 
-    <div class="body"></div>
-    <div class="grad"></div>
-    <div class="header">
+ <h2>Welcome</h2>
 
-        <div>Gruppe<span>2</span></div>
-    </div>
-    <br>
-    <form name="login">
-        <div class="login">
-            <input type="text" placeholder="username" name="userid"><br>
-            <input type="password" placeholder="password" name="pswrd"><br>
-            <input type="button" onclick="check(this.form)" value="Login" />
+<button class="open-button" onclick="openForm()">Open Form</button>
 
-        </div>
+<div class="form-popup" id="myForm">
+<div class="bg"></div>
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
 
-    </form>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+  
 </body>
 </head>
 
