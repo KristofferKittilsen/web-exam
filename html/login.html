@@ -1,40 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <meta desription="Login Page"/>
+      <meta author="Eirik Frigaard, Micah Wonder / Gruppe 2"/>
+      <title> Login </title>
+      <link href="../css/style.css" rel="stylesheet" type="text/css">
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
-    <script src="../js/login.js"></script>
 
-
-
-<body>
-
- <h2>Welcome</h2>
-
-<button class="open-button" onclick="openForm()">Open Form</button>
+  <body>
+      
+      <button class="open-button" onclick="openForm()">Open Form</button>
 
 <div class="form-popup" id="myForm">
 <div class="bg"></div>
   <form action="/action_page.php" class="form-container">
-    <h1>Login</h1>
+      
+     <!-- CONTAINER -->
+     <div id="login_main_container">
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+        <!-- JS  -->
+        <script src="../js/login.js"></script>
+        <!-- JS -->
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
+        <!-- LOGIN CONTAINER -->
+        <div id="login">
+           <label for="username">Username</label>
+           <input type="text" id="username" name="username" placeholder="Your username..">
   
-</body>
-</head>
+           <label for="password">Password</label>
+           <input type="text" id="password" name="password" placeholder="Your password..">
+           <input id="login_bttn" type="button" value="     Login    " onclick="myFunction()"></input>
+           <a href="index.html" id="Ok"></a>
+           <p id="notOk"></p>
 
-
-
+         </div>
+         <!-- END LOGIN CONTAINER -->
+      </div>
+      <!-- END MAIN CONTAINER -->
+  </body>
 
 </html>

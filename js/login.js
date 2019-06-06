@@ -1,15 +1,17 @@
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+//"database"
+    function myFunction(){
+    var id1 = "test";
+    var password = "test";
+    var Good = "Login Successful";
+      var Bad = "Login Unsuccessful";
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
+var userIdInput = document.getElementById("username").value;
+var userPwInput = document.getElementById("password").value;
 
-function check(form) {
-    if (form.userid.value == "test" && form.pswrd.value == "test") {
-        window.open(href = 'index.html')
-    } else {
-        alert("the username and password you entered is wrong")
-    }
-}
+if (userIdInput == id1 && userPwInput == password)
+{
+    document.getElementById("Ok").innerHTML = Good;
+} else {
+    document.getElementById("notOk").innerHTML = Bad;
+};
+};
