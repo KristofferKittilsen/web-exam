@@ -1,9 +1,9 @@
 
 function myFunction() {
     var user = [
-        { username: "test", password: "test" },
-        { username: "test2", password: "test2" },
-        { username: "test3", password: "test3" },
+        { username: "testPerson", password: "123" },
+        { username: "testPerson2", password: "password123" },
+        { username: "testPerson3", password: "ilikeprog" },
     ]
 
     var userIdInput = document.getElementById("username").value;
