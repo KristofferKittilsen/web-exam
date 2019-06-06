@@ -93,7 +93,7 @@ li a:hover {
 
 #toDoText {
     text-align: center;
-    color: #2892D7;
+    color: #4EA5DF;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 
@@ -101,14 +101,14 @@ li a:hover {
 
 #ongoingText {
     text-align: center;
-    color: #2892D7;
+    color: #4EA5DF;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
 #doneText {
     text-align: center;
-    color: #2892D7;
+    color: #4EA5DF;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 
