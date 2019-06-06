@@ -1,5 +1,8 @@
 function contactalert() {
-    alert("Contact information: test@test.com " + "\n" + "Phonenumber: 28119823")
+    alert("Contact information: test@test.com " + "\n" + "Phonenumber: 123456789")
+}
+function memberalert() {
+    alert("Under construction");
 }
 
 const landingdiv = document.getElementById("item1");
@@ -21,7 +24,6 @@ function createDiv() {
 
     var h1 = document.createElement("h1");
     h1.innerText = title;
-    localStorage.setItem ("h1", JSON.stringify(h1))
 
     var p = document.createElement("p");
     p.innerText = text;
@@ -224,12 +226,6 @@ span.onclick = function () {
     popup.style.display = "none";
 }
 
-window.onclick = function (event) {
-    if (event.target == popup) {
-        popup.style.display = "none";
-    }
-}
-
 var colorPopup = document.getElementById("colorPopup");
 var colorBtn = document.getElementById("newColorBtn");
 var close = document.getElementsByClassName("colorClose")[0];
@@ -242,24 +238,12 @@ close.onclick = function () {
     colorPopup.style.display = "none";
 }
 
-window.onclick = function (event) {
-    if (event.target == colorPopup) {
-        colorPopup.style.display = "none";
-    }
-}
-
 var editPopup = document.getElementById("editPopup");
 var editBtn = document.getElementById("editBtn");
 var editClose = document.getElementsByClassName("editClose")[0];
 
 editClose.onclick = function () {
     editPopup.style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target == editPopup) {
-        editPopup.style.display = "none";
-    }
 }
 
 btnGreenC.onclick = function () {

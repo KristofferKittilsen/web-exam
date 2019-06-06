@@ -310,6 +310,9 @@ li a:hover {
     border-style: inline-block;
     margin: 5px;
 }
+.deleteBtn:hover {
+    background-color: grey;
+}
 
 .colorBtn {
     border-radius: 8px;
@@ -351,6 +354,9 @@ li a:hover {
     border-style: inline-block;
     margin: 5px;
     text-align: center;
+}
+.editBtn:hover {
+    background-color: grey;
 }
 
 .editPopup {
