@@ -123,7 +123,7 @@ li a:hover {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    box-shadow:  3px 3px 3px black;
+    box-shadow: 3px 3px 3px black;
 }
 
 #text {
@@ -135,11 +135,12 @@ li a:hover {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    box-shadow:  3px 3px 3px black;
     box-shadow: 3px 3px 3px black;
- 
+    box-shadow: 3px 3px 3px black;
+
 
 }
+
 #deadline {
     border-radius: 8px;
     width: 50%;
@@ -162,7 +163,7 @@ li a:hover {
     height: 40px;
     box-sizing: border-box;
     font-size: 15px;
-    box-shadow:  3px 3px 3px black;
+    box-shadow: 3px 3px 3px black;
 }
 
 #toDoBtn {
@@ -220,7 +221,8 @@ li a:hover {
     font-weight: bold;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -242,7 +244,8 @@ li a:hover {
     font-weight: bold;
 }
 
-.colorClose:hover, .colorClose:focus {
+.colorClose:hover,
+.colorClose:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -258,6 +261,7 @@ li a:hover {
     display: inline-block;
     font-size: 16px;
 }
+
 .greenBtn {
     background-color: green;
     border: 1px solid white;
@@ -268,6 +272,7 @@ li a:hover {
     display: inline-block;
     font-size: 16px;
 }
+
 .blueBtn {
     background-color: blue;
     border: 1px solid white;
@@ -298,8 +303,8 @@ li a:hover {
     font-family: 'Open Sans', sans-serif;
     background-color: white;
     color: #1B4353;
-    width: 200px;
-    height: 50px;
+    width: 100px;
+    height: 30px;
     box-sizing: border-box;
     font-size: 15px;
     border-style: inline-block;
@@ -309,7 +314,7 @@ li a:hover {
 .colorBtn {
     border-radius: 8px;
     font-family: 'Open Sans', sans-serif;
-    background-color: white;
+    background-color: #6DAEDB;
     color: #1B4353;
     width: 200px;
     height: 50px;
@@ -317,6 +322,21 @@ li a:hover {
     font-size: 15px;
     border-style: inline-block;
     margin: 5px;
+    box-shadow: 3px 3px 3px black;
+}
+
+#btnResetC{
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1B4353;
+    color: white;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-style: none;
+    margin: 5px;
+    box-shadow: 3px 3px 3px black;
 }
 
 .editBtn {
@@ -360,18 +380,24 @@ li a:hover {
     font-weight: bold;
 }
 
-.editClose:hover, .editClose:focus {
+.editClose:hover,
+.editClose:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
 .dropBtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    border: none;
-    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #1B4353;
+    width: 85px;
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-style: inline-block;
+    margin: 5px;
 }
 
 .dropDown {
@@ -384,7 +410,7 @@ li a:hover {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -404,6 +430,84 @@ li a:hover {
 }
 
 .dropDown:hover .dropBtn {
-    background-color: #3ef841;
+    background-color: grey;
 }
 
+#editTitleBtn {
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #1B4353;
+    width: 65px;
+    height: 39px;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-style: inline-block;
+    margin: 5px;
+}
+
+#editTextBtn {
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #1B4353;
+    width: 65px;
+    height: 39px;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-style: inline-block;
+    margin: 5px;
+
+}
+
+#editDeadlineBtn {
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #1B4353;
+    width: 65px;
+    height: 39px;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-style: inline-block;
+    margin: 5px;
+
+}
+
+
+#editTitleIn {
+    border-radius: 8px;
+    width: 15%;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    box-shadow: 3px 3px 3px black;
+}
+
+#editTextIn {
+    border-radius: 8px;
+    width: 15%;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    box-shadow: 3px 3px 3px black;
+
+}
+
+#editDeadlineIn {
+    border-radius: 8px;
+    width: 15%;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    box-shadow: 3px 3px 3px black;
+}
