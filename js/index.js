@@ -104,35 +104,40 @@ function createDiv() {
     p1.innerText = team[0].name;
     p1.setAttribute("class", "p1");
     p1.onclick = function() {
-        p1.style.backgroundColor = "red";
+        p1.style.backgroundColor = "#1B4353";
+        p1.style.color = "white";
     }
 
     var p2 = document.createElement("a");
     p2.innerText = team[1].name
     p2.setAttribute("class", "p2");
     p2.onclick = function() {
-        p2.style.backgroundColor = "red";
+        p2.style.backgroundColor = "#1B4353";
+        p2.style.color = "white";
     }
 
     var p3 = document.createElement("a");
     p3.innerText = team[2].name;
     p3.setAttribute("class", "p3");
     p3.onclick = function() {
-        p3.style.backgroundColor = "red";
+        p3.style.backgroundColor = "#1B4353";
+        p3.style.color = "white";
     }
 
     var p5 = document.createElement("a");
     p5.innerText = team[4].name;
     p5.setAttribute("class", "p5");
     p5.onclick = function() {
-        p5.style.backgroundColor = "red";
+        p5.style.backgroundColor = "#1B4353";
+        p5.style.color = "white";
     }
 
     var p4 = document.createElement("a");
     p4.innerText = team[3].name;
     p4.setAttribute("class", "p4");
     p4.onclick = function() {
-        p4.style.backgroundColor = "red";
+        p4.style.backgroundColor = "#1B4353";
+        p4.style.color = "white";
     }
 
     div.appendChild(h1);
@@ -276,7 +281,7 @@ btnBlueC.onclick = function () {
     document.body.style.backgroundColor = "blue";
 }
 btnResetC.onclick = function () {
-    document.body.style.backgroundColor = "#2b5ca8";
+    document.body.style.backgroundColor = "#173753";
 }
 btnPurpleC.onclick = function () {
     document.body.style.backgroundColor = "purple";
