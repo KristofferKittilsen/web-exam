@@ -8,11 +8,9 @@ const toDoBtn = document.getElementById("toDoBtn");
 
 function createDiv() {
 
-    const title = document.getElementById("title").value;
-    const text = document.getElementById("text").value;
-    const deadline = document.getElementById("deadline").value;
-
-   
+    title = document.getElementById("title").value;
+    text = document.getElementById("text").value;
+    deadline = document.getElementById("deadline").value;
 
 
     var div = document.createElement("div");
@@ -23,54 +21,120 @@ function createDiv() {
 
     var h1 = document.createElement("h1");
     h1.innerText = title;
-    
+    localStorage.setItem ("h1", JSON.stringify(h1))
+
     var p = document.createElement("p");
     p.innerText = text;
-    
-    var x = document.createElement ("Date");   
-    x.innerText = deadline; 
+
+    var x = document.createElement("Date");
+    x.innerText = deadline;
 
     var br = document.createElement("p");
     br.innerText = "";
     var br2 = document.createElement("p");
     br.innerText = "";
 
-
     var greenBtn = document.createElement("button");
     greenBtn.setAttribute("class", "greenBtn")
     greenBtn.innerText = "Green";
-    greenBtn.onclick = function() {
+    greenBtn.onclick = function () {
         div.style.backgroundColor = "green";
     }
 
     var redBtn = document.createElement("button");
     redBtn.setAttribute("class", "redBtn")
     redBtn.innerText = "Red";
-    redBtn.onclick = function() {
+    redBtn.onclick = function () {
         div.style.backgroundColor = "red";
     }
 
     var blueBtn = document.createElement("button");
     blueBtn.setAttribute("class", "blueBtn")
     blueBtn.innerText = "Blue";
-    blueBtn.onclick = function() {
+    blueBtn.onclick = function () {
         div.style.backgroundColor = "blue";
     }
 
     var deleteBtn = document.createElement("button");
+    deleteBtn.setAttribute("class", "deleteBtn")
     deleteBtn.innerText = "Delete page";
-    deleteBtn.onclick = function() {
+    deleteBtn.onclick = function () {
         var r = confirm("You sure you want to delete this page?")
         if (r == true) {
             div.parentElement.removeChild(div);
-        } else {
-            alert("You did not delete page");
         }
-        
-
-        
     }
-    
+
+    var editBtn = document.createElement("button");
+    editBtn.setAttribute("class", "editBtn")
+    editBtn.innerText = "Edit";
+    editBtn.onclick = function () {
+        editPopup.style.display = "block";
+    }
+
+    var editedTitle = document.getElementById("editTitleIn").value;
+    editTitleBtn.onclick = function () {
+        h1.innerText = editTitleIn.value;
+    }
+
+    var editedText = document.getElementById("editTextIn").value;
+    editTextBtn.onclick = function () {
+        p.innerText = editTextIn.value;
+    }
+
+    var editedDeadline = document.getElementById("editDeadlineIn").value;
+    editDeadlineBtn.onclick = function () {
+        x.innerText = editDeadlineIn.value;
+    }
+
+    var dropDown = document.createElement("div");
+    dropDown.setAttribute("class", "dropDown");
+
+    var dropBtn = document.createElement("button");
+    dropBtn.setAttribute("class", "dropBtn");
+    dropBtn.innerText = "Members";
+
+    var dropDownContent = document.createElement("div");
+    dropDownContent.setAttribute("class", "dropDownContent");
+
+    var retreveTeam = localStorage.getItem("team");
+    var team = JSON.parse(retreveTeam);
+
+    var p1 = document.createElement("a");
+    p1.innerText = team[0].name;
+    p1.setAttribute("class", "p1");
+    p1.onclick = function() {
+        p1.style.backgroundColor = "red";
+    }
+
+    var p2 = document.createElement("a");
+    p2.innerText = team[1].name
+    p2.setAttribute("class", "p2");
+    p2.onclick = function() {
+        p2.style.backgroundColor = "red";
+    }
+
+    var p3 = document.createElement("a");
+    p3.innerText = team[2].name;
+    p3.setAttribute("class", "p3");
+    p3.onclick = function() {
+        p3.style.backgroundColor = "red";
+    }
+
+    var p5 = document.createElement("a");
+    p5.innerText = team[4].name;
+    p5.setAttribute("class", "p5");
+    p5.onclick = function() {
+        p5.style.backgroundColor = "red";
+    }
+
+    var p4 = document.createElement("a");
+    p4.innerText = team[3].name;
+    p4.setAttribute("class", "p4");
+    p4.onclick = function() {
+        p4.style.backgroundColor = "red";
+    }
+
     div.appendChild(h1);
     div.appendChild(p);
     div.appendChild(x);
@@ -80,7 +144,18 @@ function createDiv() {
     div.appendChild(blueBtn);
     div.appendChild(br2);
     div.appendChild(deleteBtn);
-    
+    div.appendChild(editBtn);
+    div.appendChild(dropDown);
+
+    dropDown.appendChild(dropBtn);
+    dropDown.appendChild(dropDownContent);
+
+    dropDownContent.appendChild(p1);
+    dropDownContent.appendChild(p2);
+    dropDownContent.appendChild(p3);
+    dropDownContent.appendChild(p4);
+    dropDownContent.appendChild(p5);
+
     landingdiv.appendChild(div);
 
 }
@@ -89,13 +164,13 @@ function createDiv() {
 toDoBtn.addEventListener("click", function () {
     createDiv();
     popup.style.display = "none";
-    
+
 })
 
 var dragged;
 
 document.addEventListener("drag", function (event) {
-
+    
 }, false);
 
 document.addEventListener("dragstart", function (event) {
@@ -134,13 +209,13 @@ document.addEventListener("drop", function (event) {
 
 var popup = document.getElementById("myPopup");
 var btn = document.getElementById("newPageBtn");
-var span = document.getElementsByClassName("close") [0];
+var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btn.onclick = function () {
     popup.style.display = "block";
 }
 
-span.onclick = function() {
+span.onclick = function () {
     popup.style.display = "none";
 }
 
@@ -152,40 +227,58 @@ window.onclick = function (event) {
 
 var colorPopup = document.getElementById("colorPopup");
 var colorBtn = document.getElementById("newColorBtn");
-var close = document.getElementsByClassName("colorClose") [0];
+var close = document.getElementsByClassName("colorClose")[0];
 
-colorBtn.onclick = function() {
+colorBtn.onclick = function () {
     colorPopup.style.display = "block";
 }
 
-close.onclick = function() {
+close.onclick = function () {
     colorPopup.style.display = "none";
 }
 
-window.onclick = function(event) {
-    if(event.target == colorPopup) {
+window.onclick = function (event) {
+    if (event.target == colorPopup) {
         colorPopup.style.display = "none";
     }
 }
 
-btnGreenC.onclick = function() {
+var editPopup = document.getElementById("editPopup");
+var editBtn = document.getElementById("editBtn");
+var editClose = document.getElementsByClassName("editClose")[0];
+
+editClose.onclick = function () {
+    editPopup.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == editPopup) {
+        editPopup.style.display = "none";
+    }
+}
+
+btnGreenC.onclick = function () {
     document.body.style.backgroundColor = "green";
 }
-btnRedC.onclick = function() {
+btnRedC.onclick = function () {
     document.body.style.backgroundColor = "red";
 }
-btnBlackC.onclick = function() {
+btnBlackC.onclick = function () {
     document.body.style.backgroundColor = "black";
 }
-btnYellowC.onclick = function() {
+btnYellowC.onclick = function () {
     document.body.style.backgroundColor = "yellow";
 }
-btnPinkC.onclick = function() {
+btnPinkC.onclick = function () {
     document.body.style.backgroundColor = "pink";
 }
-btnBlueC.onclick = function() {
+btnBlueC.onclick = function () {
     document.body.style.backgroundColor = "blue";
 }
-btnResetC.onclick = function() {
+btnResetC.onclick = function () {
     document.body.style.backgroundColor = "#2b5ca8";
 }
+btnPurpleC.onclick = function () {
+    document.body.style.backgroundColor = "purple";
+}
+

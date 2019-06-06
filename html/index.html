@@ -7,29 +7,19 @@
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="../css/kanban.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
-
-
+    <script src="../js/members.js"></script>
 </head>
 
 <body>
-
     <ul>
         <li><a class="active" href="../html/login.html">Log out</a></li>
-        <li><a href="#members">Members</a></li>
+        <li><a href="#">Members</a></li>
         <li><a onclick="contactalert()" href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
     </ul>
 
-<<<<<<< HEAD
-    <div id="inputContainer">
-        <input id="title" placeholder="Tittel">
-        <input id="text" placeholder="Tekst">
-        <button id="newBtn">Nytt kort</button>
-        <hr>
-=======
     <button id="newPageBtn">New page</button>
-    <button id="newColorBtn">Background color</button>
+    <button id="newColorBtn">Change background color</button>
     <hr>
 
 
@@ -44,43 +34,55 @@
             <input id="deadline" placeholder="Deadline" type="date" day/month/year> <button id="toDoBtn">Nytt
             kort</button>
         </div>
->>>>>>> 67e3a1bb0989e14e5727258bb6e92923b50b3130
-    </div>
-
-    
+    </div>    
 
     <div id="colorPopup" class="popup">
         <div id="container">
             <span class="colorClose">&times;</span>
             <p id="colorTitle">Change background color!</p>
             <br>
-            <button id="btnGreenC">Green</button>
-            <button id="btnRedC">Red</button>
-            <button id="btnBlackC">Black</button>
-            <button id="btnYellowC">Yellow</button>
-            <button id="btnPinkC">Pink</button>
-            <button id="btnBlueC">Blue</button>
-            <button id="btnResetC">Reset color</button>
+            <button id="btnGreenC" class="colorBtn">Green</button>
+            <button id="btnRedC" class="colorBtn">Red</button>
+            <button id="btnBlackC" class="colorBtn">Black</button>
+            <button id="btnYellowC" class="colorBtn">Yellow</button>
+            <button id="btnPinkC" class="colorBtn">Pink</button>
+            <button id="btnBlueC" class="colorBtn">Blue</button>
+            <button id="btnPurpleC" class="colorBtn">Purple</button>
+            <button id="btnResetC" class="colorBtn">Reset color</button>
         </div>
 
+    </div>
+
+    <div id="editPopup" class="popup">
+        <div id="editContainer">
+            <span class="editClose">&times;</span>
+            <p>Edit here</p>
+            <input id="editTitleIn" placeholder="edit title here">
+            <button id="editTitleBtn">Edit title</button>
+            <input id="editTextIn" placeholder="edit text here">
+            <button id="editTextBtn">Edit text</button>
+            <input id="editDeadlineIn" type="date">
+            <button id="editDeadlineBtn">Edit deadline</button>
+        </div>
     </div>
 
     <div class="main">
         <div id="gridContainer">
             <div class="column" id="item1">
-                <p id="toDoText">MÅ GJØRES:</p>
+                <p id="toDoText">TO DO:</p>
             </div>
             <div class="column" id="item2">
-                <p id="ongoingText">UNDERVEIS:</p>
+                <p id="ongoingText">ONGOING:</p>
             </div>
             <div class="column" id="item3">
-                <p id="doneText">FULLFØRT:</p>
+                <p id="doneText">DONE:</p>
             </div>
             <script src="../js/index.js">
             </script>
         </div>
 
     </div>
+
 
 
 </body>

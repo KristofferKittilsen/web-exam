@@ -116,42 +116,28 @@ li a:hover {
 
 #title {
     border-radius: 8px;
-<<<<<<< HEAD
     width: 15%;
-=======
     width: 50%;
->>>>>>> 67e3a1bb0989e14e5727258bb6e92923b50b3130
     padding: 12px 20px;
     margin: 10px 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-<<<<<<< HEAD
     box-shadow:  3px 3px 3px black;
-    
-=======
-    box-shadow: 3px 3px 3px black;
->>>>>>> 67e3a1bb0989e14e5727258bb6e92923b50b3130
-
 }
 
 #text {
     border-radius: 8px;
-<<<<<<< HEAD
     width: 15%;
-=======
     width: 50%;
->>>>>>> 67e3a1bb0989e14e5727258bb6e92923b50b3130
     padding: 12px 20px;
     margin: 10px 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-<<<<<<< HEAD
     box-shadow:  3px 3px 3px black;
-=======
     box-shadow: 3px 3px 3px black;
->>>>>>> 67e3a1bb0989e14e5727258bb6e92923b50b3130
+ 
 
 }
 #deadline {
@@ -171,7 +157,7 @@ li a:hover {
     font-family: 'Open Sans', sans-serif;
     background-color: #6DAEDB;
     color: #1B4353;
-<<<<<<< HEAD
+
     width: 100px;
     height: 40px;
     box-sizing: border-box;
@@ -179,8 +165,7 @@ li a:hover {
     box-shadow:  3px 3px 3px black;
 }
 
-
-=======
+#toDoBtn {
     width: 110px;
     height: 50px;
     box-sizing: border-box;
@@ -240,7 +225,7 @@ li a:hover {
     text-decoration: none;
     cursor: pointer;
 }
-<<<<<<< HEAD
+
 
 #container {
     background-color: White;
@@ -265,7 +250,7 @@ li a:hover {
 
 .redBtn {
     background-color: red;
-    border: none;
+    border: 1px solid white;
     color: white;
     padding: 10px 15px;
     text-align: center;
@@ -275,7 +260,7 @@ li a:hover {
 }
 .greenBtn {
     background-color: green;
-    border: none;
+    border: 1px solid white;
     color: white;
     padding: 10px 15px;
     text-align: center;
@@ -285,7 +270,7 @@ li a:hover {
 }
 .blueBtn {
     background-color: blue;
-    border: none;
+    border: 1px solid white;
     color: white;
     padding: 10px 15px;
     text-align: center;
@@ -293,6 +278,132 @@ li a:hover {
     display: inline-block;
     font-size: 16px;
 }
-=======
->>>>>>> 67e3a1bb0989e14e5727258bb6e92923b50b3130
->>>>>>> afab02c9bfb64c5d1bfbe9f6f6489022371815ff
+
+#newColorBtn {
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #6DAEDB;
+    color: #1B4353;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 15px;
+    box-shadow: 3px 3px 3px black;
+    border: 0;
+    margin: 5px;
+}
+
+.deleteBtn {
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #1B4353;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-style: inline-block;
+    margin: 5px;
+}
+
+.colorBtn {
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #1B4353;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-style: inline-block;
+    margin: 5px;
+}
+
+.editBtn {
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #1B4353;
+    width: 45px;
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-style: inline-block;
+    margin: 5px;
+    text-align: center;
+}
+
+.editPopup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+
+#editContainer {
+    background-color: White;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.editClose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.editClose:hover, .editClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropDownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDownContent:hover {
+    background-color: #f1f1f1;
+}
+
+.dropDown:hover .dropDownContent {
+    display: block;
+}
+
+.dropDown:hover .dropBtn {
+    background-color: #3ef841;
+}
+
